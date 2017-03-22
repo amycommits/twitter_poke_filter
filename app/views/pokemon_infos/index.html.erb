@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pokemon Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pokemon name</th>
+      <th>Despawns at</th>
+      <th>Iv value</th>
+      <th>Channel</th>
+      <th>Coordinates</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Short url</th>
+      <th>Long url</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pokemon_infos.each do |pokemon_info| %>
+      <tr>
+        <td><%= pokemon_info.pokemon_name %></td>
+        <td><%= pokemon_info.despawns_at %></td>
+        <td><%= pokemon_info.iv_value %></td>
+        <td><%= pokemon_info.channel %></td>
+        <td><%= pokemon_info.coordinates %></td>
+        <td><%= pokemon_info.latitude %></td>
+        <td><%= pokemon_info.longitude %></td>
+        <td><%= pokemon_info.short_url %></td>
+        <td><%= pokemon_info.long_url %></td>
+        <td><%= pokemon_info.description %></td>
+        <td><%= link_to 'Show', pokemon_info %></td>
+        <td><%= link_to 'Edit', edit_pokemon_info_path(pokemon_info) %></td>
+        <td><%= link_to 'Destroy', pokemon_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pokemon Info', new_pokemon_info_path %>

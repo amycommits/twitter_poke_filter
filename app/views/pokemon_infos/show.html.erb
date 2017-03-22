@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pokemon name:</strong>
+  <%= @pokemon_info.pokemon_name %>
+</p>
+
+<p>
+  <strong>Despawns at:</strong>
+  <%= @pokemon_info.despawns_at %>
+</p>
+
+<p>
+  <strong>Iv value:</strong>
+  <%= @pokemon_info.iv_value %>
+</p>
+
+<p>
+  <strong>Channel:</strong>
+  <%= @pokemon_info.channel %>
+</p>
+
+<p>
+  <strong>Coordinates:</strong>
+  <%= @pokemon_info.coordinates %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @pokemon_info.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @pokemon_info.longitude %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @pokemon_info.short_url %>
+</p>
+
+<p>
+  <strong>Long url:</strong>
+  <%= @pokemon_info.long_url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pokemon_info.description %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_info_path(@pokemon_info) %> |
+<%= link_to 'Back', pokemon_infos_path %>

@@ -1,0 +1,2 @@
+class PokemonInfo < ApplicationRecord
+end

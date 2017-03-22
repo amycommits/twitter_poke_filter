@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pokemon_name: MyString
+  despawns_at: 2017-03-22 13:24:44
+  iv_value: MyString
+  channel: MyString
+  coordinates: MyString
+  latitude: MyString
+  longitude: MyString
+  short_url: MyString
+  long_url: MyString
+  description: MyString
+
+two:
+  pokemon_name: MyString
+  despawns_at: 2017-03-22 13:24:44
+  iv_value: MyString
+  channel: MyString
+  coordinates: MyString
+  latitude: MyString
+  longitude: MyString
+  short_url: MyString
+  long_url: MyString
+  description: MyString

@@ -1,0 +1,67 @@
+<%= form_for(pokemon_info) do |f| %>
+  <% if pokemon_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pokemon_info.errors.count, "error") %> prohibited this pokemon_info from being saved:</h2>
+
+      <ul>
+      <% pokemon_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pokemon_name %>
+    <%= f.text_field :pokemon_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :despawns_at %>
+    <%= f.datetime_select :despawns_at %>
+  </div>
+
+  <div class="field">
+    <%= f.label :iv_value %>
+    <%= f.text_field :iv_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :channel %>
+    <%= f.text_field :channel %>
+  </div>
+
+  <div class="field">
+    <%= f.label :coordinates %>
+    <%= f.text_field :coordinates %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :short_url %>
+    <%= f.text_field :short_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :long_url %>
+    <%= f.text_field :long_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
