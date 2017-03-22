@@ -22,3 +22,6 @@
 
 #configuration
 config/initializers/twitter_credentials.rb
+
+#twitter filter
+lib/tasks/find_pokemon.rake
