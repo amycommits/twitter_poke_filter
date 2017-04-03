@@ -1,0 +1,2 @@
+module TwitterFilterPokemonsHelper
+end

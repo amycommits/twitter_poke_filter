@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @twitter_filter_pokemon.name %>
+</p>
+
+<p>
+  <strong>Despawns at:</strong>
+  <%= @twitter_filter_pokemon.despawns_at %>
+</p>
+
+<p>
+  <strong>Iv value:</strong>
+  <%= @twitter_filter_pokemon.iv_value %>
+</p>
+
+<p>
+  <strong>Channel:</strong>
+  <%= @twitter_filter_pokemon.channel %>
+</p>
+
+<p>
+  <strong>Coordinates:</strong>
+  <%= @twitter_filter_pokemon.coordinates %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @twitter_filter_pokemon.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @twitter_filter_pokemon.longitude %>
+</p>
+
+<p>
+  <strong>Short url:</strong>
+  <%= @twitter_filter_pokemon.short_url %>
+</p>
+
+<p>
+  <strong>Long url:</strong>
+  <%= @twitter_filter_pokemon.long_url %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @twitter_filter_pokemon.description %>
+</p>
+
+<%= link_to 'Edit', edit_twitter_filter_pokemon_path(@twitter_filter_pokemon) %> |
+<%= link_to 'Back', twitter_filter_pokemons_path %>

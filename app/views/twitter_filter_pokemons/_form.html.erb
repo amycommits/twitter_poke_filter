@@ -1,0 +1,67 @@
+<%= form_for(twitter_filter_pokemon) do |f| %>
+  <% if twitter_filter_pokemon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(twitter_filter_pokemon.errors.count, "error") %> prohibited this twitter_filter_pokemon from being saved:</h2>
+
+      <ul>
+      <% twitter_filter_pokemon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :despawns_at %>
+    <%= f.text_field :despawns_at %>
+  </div>
+
+  <div class="field">
+    <%= f.label :iv_value %>
+    <%= f.text_field :iv_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :channel %>
+    <%= f.text_field :channel %>
+  </div>
+
+  <div class="field">
+    <%= f.label :coordinates %>
+    <%= f.text_field :coordinates %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :short_url %>
+    <%= f.text_field :short_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :long_url %>
+    <%= f.text_field :long_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
