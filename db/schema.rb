@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323195621) do
+ActiveRecord::Schema.define(version: 20170404023637) do
 
   create_table "pokemon_infos", force: :cascade do |t|
     t.string   "pokemon_name"
@@ -18,13 +18,15 @@ ActiveRecord::Schema.define(version: 20170323195621) do
     t.string   "iv_value"
     t.string   "channel"
     t.string   "coordinates"
-    t.string   "latitude"
-    t.string   "longitude"
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "short_url"
     t.string   "long_url"
     t.string   "description"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "iv_stats"
+    t.string   "location"
   end
 
   create_table "twitter_filter_pokemons", force: :cascade do |t|
