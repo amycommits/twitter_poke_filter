@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @area_notification.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @area_notification.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @area_notification.longitude %>
+</p>
+
+<p>
+  <strong>Lower left latitude:</strong>
+  <%= @area_notification.lower_left_latitude %>
+</p>
+
+<p>
+  <strong>Lower left longitude:</strong>
+  <%= @area_notification.lower_left_longitude %>
+</p>
+
+<p>
+  <strong>Upper right latitude:</strong>
+  <%= @area_notification.upper_right_latitude %>
+</p>
+
+<p>
+  <strong>Upper right longitude:</strong>
+  <%= @area_notification.upper_right_longitude %>
+</p>
+
+<%= link_to 'Edit', edit_area_notification_path(@area_notification) %> |
+<%= link_to 'Back', area_notifications_path %>

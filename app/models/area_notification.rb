@@ -1,0 +1,2 @@
+class AreaNotification < ApplicationRecord
+end
