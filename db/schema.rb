@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170404023637) do
+ActiveRecord::Schema.define(version: 20170406012444) do
+
+  create_table "area_notifications", force: :cascade do |t|
+    t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.float    "lower_left_latitude"
+    t.float    "lower_left_longitude"
+    t.float    "upper_right_latitude"
+    t.float    "upper_right_longitude"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
 
   create_table "pokemon_infos", force: :cascade do |t|
     t.string   "pokemon_name"

@@ -1,0 +1,52 @@
+<%= form_for(area_notification) do |f| %>
+  <% if area_notification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(area_notification.errors.count, "error") %> prohibited this area_notification from being saved:</h2>
+
+      <ul>
+      <% area_notification.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lower_left_latitude %>
+    <%= f.text_field :lower_left_latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lower_left_longitude %>
+    <%= f.text_field :lower_left_longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :upper_right_latitude %>
+    <%= f.text_field :upper_right_latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :upper_right_longitude %>
+    <%= f.text_field :upper_right_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

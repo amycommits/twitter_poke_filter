@@ -1,0 +1,2 @@
+module AreaNotificationsHelper
+end

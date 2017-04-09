@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :area_notifications
   resources :twitter_filter_pokemons
   resources :pokemon_infos
   root 'pokemon_infos#index'
